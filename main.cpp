@@ -270,7 +270,7 @@ int main() {
                         cout << "Command not found. " << endl;
                         list_commands();
                 }
-                
+                // TODO
                 command.empty();
                 cout << "Enter command:: ";
                 getline(cin, command);
