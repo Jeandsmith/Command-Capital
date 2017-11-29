@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Space_Marine.dir/main.cpp.o  -o Space_Marine 

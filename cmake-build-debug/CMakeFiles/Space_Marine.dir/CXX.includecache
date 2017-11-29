@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jeandsmith/Documents/CLion/Space-Marine/main.cpp
+iostream
+-
+random
+-
+algorithm
+-
+string
+-
+map
+-
+array
+-
+
