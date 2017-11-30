@@ -1,12 +1,12 @@
 #include <iostream>
 #include <random>
 #include <algorithm>
+#include <iomanip>
 #include <string>
 #include <map>
 #include <array>
 
 using namespace std;
-
 
 void intro_screen() {
         cout << "  ________________   " << "_______" << "       _______ " << "_____    _____" << endl;
@@ -25,7 +25,6 @@ void intro_screen() {
 
 
 struct character {
-        map<string, double> list;
         string c_name = " ";
         string c_class = " ";
         double initial_income = 0;
@@ -45,14 +44,154 @@ struct character {
                 cout << "Class  --> " << c_class << endl;
                 cout << "Income --> " << initial_income << endl;
         }
+
+        void deduct_cost(double cost) {
+                initial_income -= cost;
+        }
 };
 
+struct command_rep {
+
+        void end_game() {
+                cout << "\tGame-Terminated." << endl;
+                cout << "\tStats: " << endl;
+                cout << "\t\tTime-Played: " << endl;
+//        TODO: Implement the stat of the player.
+                exit(EXIT_SUCCESS);
+        };
+
+        void clear_screen() {
+                system("clear");
+        };
+
+        void list_commands() {
+                cout << "=========================================================================" << endl;
+                cout << "=                             List of Commands                          =" << endl;
+                cout << "=========================================================================" << endl;
+                cout << "my-info --> View your information" << endl;
+                cout << "sell-items --> Sell items you don't need anymore." << endl;
+                cout << "buy-items --> Buy items evadable in the city or other merchants" << endl;
+                cout << "expand-env --> With enough money, expand your environment to boost income" << endl;
+                cout << "clear --> Clear the screen" << endl;
+                cout << "show-items --> Show a list in detail of the items you currently have" << endl;
+        };
+
+        void sell_items(map<string, double> &list) {
+
+        };
+
+        void buy_item(map<string, double> &items, character &pl) {
+                unsigned seed{static_cast<unsigned>(time(nullptr))};
+                srand(seed);
+                vector<string> stock_item{
+                        "Dry Land",
+                        "Broken Building",
+                        "Rusted Wood",
+                        "Closed Down Restaurant",
+                        "Bread",
+                        "Meat"
+                };
+
+                items["Dry Land"] = 450.00f;
+                items["Broken Building"] = 200.00f;
+                items["Rusted Wood"] = 20.00f;
+                items["Closed Down Restaurant"] = 150.00f;
+                items["Bread"] = 5.00f;
+                items["Meat"] = 10.00f;
+
+                cout << "\tItem[name - cost]: " << endl;
+                for (auto &it: items) {
+                        cout << "\t\t" << it.first << " " << "$" << it.second << endl;
+                }
+                cout << "\n";
+
+                cout << "Enter \'cancel\' to cancel" << endl;
+                cout << "Enter \'return\' to the main menu" << endl;
+                cout << "Enter the name of the items you will purchase: ";
+                cout << "\n";
+
+                int count = 1 + rand() % 10;
+                string option;
+                getline(cin, option);
+                while (option != "return") {
+
+                        for (auto &item: items) {
+
+                                if (option == item.first) {
+                                        cout << item.first << "--> $" << item.second
+                                             << "  X" << count << endl;
+
+                                        if (count > 1) {
+                                                cout << "\tNum of items to buy: ";
+                                                int item_count;
+                                                get_count:
+                                                cin >> item_count;
+
+                                                // Handle input while it is less than 0
+                                                while (item_count <= 0) {
+
+                                                        if (item_count == 0) {
+                                                                cout << "\tYou bought nothing." << endl;
+                                                                goto bottom;
+                                                        } else {
+                                                                cout << "\tThe count cannot be less than 0" << endl;
+                                                                cout << "Try again" << endl;
+                                                                goto get_count;
+                                                        }
+                                                }
+
+                                                // Handle the input if it is greater then current count of items
+                                                if (item_count >= count) {
+                                                        item_count = count;
+                                                }
+
+                                                // Check if the user has enough money to buy
+                                                if (pl.initial_income < item_count * item.second) {
+                                                        cout << "You do not have enough money. " << endl;
+                                                        cout << "Try again." << endl;
+                                                        goto get_count;
+                                                }
+
+                                                // Process transaction
+                                                double cost = item_count * item.second;
+                                                cout << "Purchased: " << endl;
+                                                pl.deduct_cost(static_cast<double>(cost));
+                                                cout << "Details: \n\t Cost: $" << cost
+                                                     << "\t\n" << "Income-Left: " << pl.initial_income << endl;
+
+                                        } else {
+                                                pl.deduct_cost(static_cast<double>(item.second));
+                                        }
+                                        goto bottom;
+
+                                } else if (item.first == stock_item[stock_item.size() - 1] && option != item.first) {
+                                        cout << "\tItem: " << option << " is not in the inventory." << endl;
+                                }
+                        }
+
+                        if (option == "exit") {
+                                end_game();
+                        }
+
+                        bottom:
+                        option.empty();
+                        cout << "\tEnter item name >> ";
+                        getline(cin, option);
+                }
+
+                if (option == "return") {
+                        return;
+                }
+        };
+
+}COMMAND;
 
 void get_user_information(character &pl) {
         get_name:
         cout << "Name of character: ";
         string ch_name;
         getline(cin, ch_name);
+
         if (ch_name == " " || ch_name.empty()) {
                 cout << "Field is empty" << endl;
                 cout << "Try again: " << endl;
@@ -65,8 +204,9 @@ void get_user_information(character &pl) {
                 else if (pl.c_class == "Business") pl.initial_income = 100.0f;
                 else if (pl.c_class == "Commoner") pl.initial_income = 15.0f;
         }
-}
 
+        cout << "\n";
+}
 
 void get_class(character &pl) {
 
@@ -92,150 +232,69 @@ void get_class(character &pl) {
                         c_class = "Baker";
                         pl.set_class(c_class);
                         break;
+
                 case 2:
                         cout << "Business Class" << endl;
                         c_class = "Business";
                         pl.set_class(c_class);
                         break;
+
                 case 3:
                         cout << "Commoner class" << endl;
                         c_class = "Commoner";
                         pl.set_class(c_class);
                         break;
+
                 default:
                         break;
         }
 }
 
-void list_commands() {
-        array<string, 10> comm_list;
-        cout << "=========================================================================" << endl;
-        cout << "=                             List of Commands                          =" << endl;
-        cout << "=========================================================================" << endl;
-        comm_list[0] = "my-info --> View your information";
-        comm_list[1] = "sell-items --> Sell items you don't need anymore.";
-        comm_list[2] = "buy-items --> Buy items evadable in the city or other merchants";
-        comm_list[3] = "expand-env --> With enough money, expand your environment to boost income";
-        comm_list[4] = "clear --> Clear the screen";
-        comm_list[5] = "show-items --> Show a list in detail of the items you currently have";
-        for (auto &command: comm_list) {
-                cout << command << endl;
-        }
-}
+void process_command(const string &c, character &pl, map<string, double> &item_con) {
+        vector<string> commands;
+        commands.emplace_back("help");
+        commands.emplace_back("my-info");
+        commands.emplace_back("clear");
+        commands.emplace_back("sell-items");
+        commands.emplace_back("buy-items");
+        commands.emplace_back("expand-env");
 
-void clear_screen() {
-        system("clear");
-}
+        int co = 1;
 
+        // TODO: Complete the function pointer
+        map <string, void(*)()> pmetho;
+        pmetho["help"] = &COMMAND.list_commands;
 
-void buy_item() {
-        unsigned seed{static_cast<unsigned>(time(nullptr))};
-        srand(seed);
-        vector<string> stock_item{
-                "Dry Land",
-                "Broken Building",
-                "Rusted Wood",
-                "Closed Down Restaurant",
-                "Bread",
-                "Meat"
-        };
-
-        int land = 0;
-        int meat = 0;
-        int bread = 0;
-        int rest = 0;
-        int building = 0;
-        int wood = 0;
-
-        array<string, 3> ev_items;
-        for (auto &ev_item : ev_items) {
-                int rval = static_cast<int>(rand() % stock_item.size() - 1);
-                ev_item = stock_item[rval];
-                switch (rval) {
-                        case 0:
-                                land++;
-                                break;
-                        case 1:
-                                building++;
-                                break;
-                        case 2:
-                                wood++;
-                                break;
-                        case 3:
-                                rest++;
-                                break;
-                        case 4:
-                                bread++;
-                                break;
-                        case 5:
-                                meat++;
-                                break;
-                        default:
-                                break;
-                }
-
-        }
-
-
-        double price = 0.00f;
-        for (const auto &ev_item : ev_items) {
-                if (ev_item == "Bread") {
-                        price = 4.00f;
-                } else if (ev_item == "Broken Building") {
-                        price = 500.00f;
-                } else if (ev_item == "Rusted Wood") {
-                        price = 10.00f;
-                } else if (ev_item == "Meat") {
-                        price = 7.00f;
-                } else if (ev_item == "Closed Down Restaurant") {
-                        price = 250.00f;
-                } else if (ev_item == "Rusted Wood") {
-                        price = 10.00f;
-                }
-                cout << ev_item << "-->" << price << endl;
-        }
-        cout << "\n";
-
-        cout << "Enter \'cancel\' to cancel" << endl;
-        cout << "Enter \'return\' to the main menu" << endl;
-        cout << "Enter the name of the item you will purchase: ";
-        cout << "\n";
-
-        string option = " ";
-        getline(cin, option);
-        while (option != "cancel" || option != "return") {
-                for (auto &item: ev_items) {
-                        if (option == item) {
-                                cout << item << "--> " << land << ": " << price << endl;
-                                break;
-                        }else if (ev_items.end()){
-                                cout << "Item: " << option << " is not in the inventory." << endl;
-                        }
-                }
-                option.empty();
-                getline(cin, option);
-        }
-}
-
-//void sell_items(map<string, double> &list) {
-//        if (list.empty()) {
-//                cout << "\tThe list is empty" << endl;
-//                cout << "\tCome back when you have bought something" << endl;
-//                return;
-//        }
+        for (const auto &command: commands) {
+//                if (command == "help") list_commands();
 //
-//        for (auto & item: list){
-//                cout << item.first << ": " << item.second << "X--count of item";
-//        }
+//                if (command == "my-info") {
+//                        pl.info();
+//                }
 //
-//        cout << "Enter the name of the item you would like to sell" << endl;
-//        cout << "\t";
-//        string item_name;
-//        getline(cin, item_name);
-//        int count = 0;
-//        cout << "How many are you selling?:";
-//        cin >> count;
-//}
+//                if (command == "clear") {
+//                        clear_screen();
+//                }
+//
+//                if (command == "sell-items") {
+//
+//                }
+//
+//                if (command == "buy-items") {
+//                        buy_item(item_con, pl);
+//                }
+//
+//                if (command == "expand-env") {
+//                        // Expand env
+//                } else {
+//                        cout << "Command: " << command << " not-found." << endl;
+//                        list_commands();
+//                }
+                if (c == command) {
+
+                }
+        }
+}
 
 int main() {
         intro_screen();
@@ -243,34 +302,22 @@ int main() {
         cout << "Enter \'help\' for list of commands." << endl;
         cout << "Enter \'exit\' to close the console." << endl;
 
+        map<string, double> item_con;
         character pl;
         get_user_information(pl);
         string command;
         cin.ignore();
         cout << "Enter command:: ";
+        command.empty();
         getline(cin, command);
-        while (command != "exit") {
-                cout << "\n";
-                if (command == "help") list_commands();
-                if (command == "my-info") {
-                        pl.info();
-                }
-                if (command == "clear") {
-                        clear_screen();
-                }
-                if (command == "sell-items") {
 
-                }
-                if (command == "buy-items") {
-                        buy_item();
-                }
-                if (command == "expand-env") {
-                        // Expand env
-                }else {
-                        cout << "Command not found. " << endl;
-                        list_commands();
-                }
-                // TODO
+
+        while (command != "exit") {
+
+                cout << "\n";
+
+
+                cout << "\n";
                 command.empty();
                 cout << "Enter command:: ";
                 getline(cin, command);
