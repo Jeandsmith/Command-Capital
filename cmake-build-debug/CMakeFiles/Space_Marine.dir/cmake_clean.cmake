@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Space_Marine.dir/main.cpp.o"
+  "CMakeFiles/Space_Marine.dir/Character.cpp.o"
+  "CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o"
   "Space_Marine.pdb"
   "Space_Marine"
 )

@@ -84,6 +84,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h">
+			<Option target="Space_Marine"/>
+		</Unit>
 		<Unit filename="/home/jeandsmith/Documents/CLion/Space-Marine/main.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>

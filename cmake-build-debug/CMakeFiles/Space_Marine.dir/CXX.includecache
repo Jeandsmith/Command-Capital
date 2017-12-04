@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp
+Headers/Character.h
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
+
+/home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp
+Headers/Command_Repo.h
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h
+
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
+iostream
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/iostream
+string
+-
+
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h
+iostream
+-
+unordered_map
+-
+vector
+-
+map
+-
+Character.h
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
+
 /home/jeandsmith/Documents/CLion/Space-Marine/main.cpp
 iostream
 -
@@ -15,10 +41,18 @@ algorithm
 -
 iomanip
 -
+stdio.h
+-
 string
 -
 map
 -
 array
 -
+unordered_map
+-
+Headers/Character.h
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
+Headers/Command_Repo.h
+/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h
 
