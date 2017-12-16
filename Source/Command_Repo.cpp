@@ -2,12 +2,8 @@
 // Created by jeandsmith on 12/3/17.
 //
 
-#include "Headers/Command_Repo.h"
-
-Command_Repo::Command_Repo(Character current_player) {
-	this->player = current_player;
-
-}
+#include <fstream>
+#include "../Headers/Command_Repo.h"
 
 void Command_Repo::end_game() {
 	cout << "\tGame-Terminated." << endl;
@@ -18,11 +14,20 @@ void Command_Repo::end_game() {
 };
 
 void Command_Repo::execute_command(string & command) {
-	point["help"] = this->list_commands;
+	vector<string> command_repo;
+	command_repo.emplace_back("help");
+	command_repo.emplace_back("my-get_info");
+	command_repo.emplace_back("clear");
+	command_repo.emplace_back("sell-items");
+	command_repo.emplace_back("buy-items");
+	command_repo.emplace_back("expand-env");
 
-	if (command == "help" || command == "Help"){
-		point[command];
+	for (const auto &choice: command_repo) {
+		if (choice == command) {
+			list_commands();
+		}
 	}
+
 }
 
 void Command_Repo::clear_screen() {
@@ -30,21 +35,32 @@ void Command_Repo::clear_screen() {
 };
 
 void Command_Repo::list_commands() {
-	cout << "=========================================================================" << endl;
-	cout << "=                             List of Commands                          =" << endl;
-	cout << "=========================================================================" << endl;
-	cout << "my-info --> View your information" << endl;
-	cout << "sell-items --> Sell items you don't need anymore." << endl;
-	cout << "buy-items --> Buy items evadable in the city or other merchants" << endl;
-	cout << "expand-env --> With enough money, expand your environment to boost income" << endl;
-	cout << "clear --> Clear the screen" << endl;
-	cout << "show-items --> Show a list in detail of the items you currently have" << endl;
+	fstream guide_file{"../text_files/game_guide.txt", ios::out | ios::in};
+	if (guide_file.fail()) {
+		throw "Guide not found";
+	} else {
+		string input;
+		while (getline(guide_file, input)) {
+			cout << input << endl;
+		}
+		guide_file.close();
+	}
+}
+
+void Command_Repo::sell_items () {
 
 }
 
-void Command_Repo::sell_items() {}
+void Command_Repo::set_list () {
+	list.emplace("Dry Land", 450.00f);
+	list.emplace("Broken Building", 200.00f);
+	list.emplace("Rusted Wood", 20.00f);
+	list.emplace("Closed Down Restaurant", 150.00f);
+	list.emplace("Bread", 5.00f);
+	list.emplace("Meat", 10.00f);
+}
 
-void Command_Repo::buy_item() {
+void Command_Repo::buy_item (Character player) {
 	vector<string> stock_item{
 		"Dry Land",
 		"Broken Building",
@@ -54,12 +70,6 @@ void Command_Repo::buy_item() {
 		"Meat"
 	};
 
-	list.emplace("Dry Land", 450.00f);
-	list.emplace("Broken Building", 200.00f);
-	list.emplace("Rusted Wood", 20.00f);
-	list.emplace("Closed Down Restaurant", 150.00f);
-	list.emplace("Bread", 5.00f);
-	list.emplace("Meat", 10.00f);
 
 	cout << "\tItem[name - cost]: " << endl;
 	for (auto &it: list) {
@@ -94,10 +104,12 @@ void Command_Repo::buy_item() {
 					while (item_count <= 0) {
 
 						if (item_count == 0) {
-							cout << "\tYou bought nothing." << endl;
+							cout << "\tYou bought nothing."
+							     << endl;
 							goto bottom;
 						} else {
-							cout << "\tThe count cannot be less than 0" << endl;
+							cout << "\tThe count cannot be less than 0"
+							     << endl;
 							cout << "Try again" << endl;
 							goto get_count;
 						}

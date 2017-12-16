@@ -9,6 +9,7 @@
 #include <unordered_map>
 #include <vector>
 #include <map>
+#include <list>
 #include "Character.h"
 
 
@@ -16,14 +17,11 @@ using namespace std;
 
 class Command_Repo {
     private:
-	Character player;
 	unordered_map<string, double> list{};
-	map <string, void(Command_Repo::*)()> point{};
-	vector<void(Command_Repo::*)()>func_pointer{};
 
     public:
 
-	explicit Command_Repo(Character current_player);
+	explicit Command_Repo () = default;
 
 	void end_game();
 
@@ -35,7 +33,9 @@ class Command_Repo {
 
 	void sell_items();
 
-	void buy_item();
+	void buy_item (Character player);
+
+	void set_list ();
 };
 
 

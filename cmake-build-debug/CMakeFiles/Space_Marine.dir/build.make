@@ -43,10 +43,10 @@ RM = /home/jeandsmith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.11
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeandsmith/Documents/CLion/Space-Marine
+CMAKE_SOURCE_DIR = /home/jeandsmith/Documents/CLion/Terminal-Democracy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Space_Marine.dir/depend.make
@@ -57,93 +57,119 @@ include CMakeFiles/Space_Marine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Space_Marine.dir/flags.make
 
-CMakeFiles/Space_Marine.dir/main.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
-CMakeFiles/Space_Marine.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Space_Marine.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/main.cpp.o -c /home/jeandsmith/Documents/CLion/Space-Marine/main.cpp
+CMakeFiles/Space_Marine.dir/Source/main.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/main.cpp.o: ../Source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Space_Marine.dir/Source/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/main.cpp.o -c /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp
 
-CMakeFiles/Space_Marine.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Space-Marine/main.cpp > CMakeFiles/Space_Marine.dir/main.cpp.i
+CMakeFiles/Space_Marine.dir/Source/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp > CMakeFiles/Space_Marine.dir/Source/main.cpp.i
 
-CMakeFiles/Space_Marine.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Space-Marine/main.cpp -o CMakeFiles/Space_Marine.dir/main.cpp.s
+CMakeFiles/Space_Marine.dir/Source/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp -o CMakeFiles/Space_Marine.dir/Source/main.cpp.s
 
-CMakeFiles/Space_Marine.dir/main.cpp.o.requires:
+CMakeFiles/Space_Marine.dir/Source/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Space_Marine.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Space_Marine.dir/Source/main.cpp.o.requires
 
-CMakeFiles/Space_Marine.dir/main.cpp.o.provides: CMakeFiles/Space_Marine.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Space_Marine.dir/main.cpp.o.provides
+CMakeFiles/Space_Marine.dir/Source/main.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/main.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/main.cpp.o.provides
 
-CMakeFiles/Space_Marine.dir/main.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/main.cpp.o
-
-
-CMakeFiles/Space_Marine.dir/Character.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
-CMakeFiles/Space_Marine.dir/Character.cpp.o: ../Character.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Space_Marine.dir/Character.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Character.cpp.o -c /home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp
-
-CMakeFiles/Space_Marine.dir/Character.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Character.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp > CMakeFiles/Space_Marine.dir/Character.cpp.i
-
-CMakeFiles/Space_Marine.dir/Character.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Character.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp -o CMakeFiles/Space_Marine.dir/Character.cpp.s
-
-CMakeFiles/Space_Marine.dir/Character.cpp.o.requires:
-
-.PHONY : CMakeFiles/Space_Marine.dir/Character.cpp.o.requires
-
-CMakeFiles/Space_Marine.dir/Character.cpp.o.provides: CMakeFiles/Space_Marine.dir/Character.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Character.cpp.o.provides.build
-.PHONY : CMakeFiles/Space_Marine.dir/Character.cpp.o.provides
-
-CMakeFiles/Space_Marine.dir/Character.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Character.cpp.o
+CMakeFiles/Space_Marine.dir/Source/main.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/main.cpp.o
 
 
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o: ../Command_Repo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o -c /home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.o: ../Source/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Space_Marine.dir/Source/Character.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/Character.cpp.o -c /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp
 
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Command_Repo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp > CMakeFiles/Space_Marine.dir/Command_Repo.cpp.i
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/Character.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp > CMakeFiles/Space_Marine.dir/Source/Character.cpp.i
 
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Command_Repo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp -o CMakeFiles/Space_Marine.dir/Command_Repo.cpp.s
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/Character.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp -o CMakeFiles/Space_Marine.dir/Source/Character.cpp.s
 
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.requires:
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.requires:
 
-.PHONY : CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.requires
+.PHONY : CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.requires
 
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.provides: CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.provides.build
-.PHONY : CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.provides
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.provides
 
-CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o
+CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/Character.cpp.o
+
+
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o: ../Source/Command_Repo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o -c /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp
+
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp > CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.i
+
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp -o CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.s
+
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.requires
+
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.provides
+
+CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o
+
+
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o: ../Source/GameSettings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o -c /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp
+
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp > CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.i
+
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp -o CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.s
+
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.requires
+
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.provides
+
+CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o
 
 
 # Object files for target Space_Marine
 Space_Marine_OBJECTS = \
-"CMakeFiles/Space_Marine.dir/main.cpp.o" \
-"CMakeFiles/Space_Marine.dir/Character.cpp.o" \
-"CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o"
+"CMakeFiles/Space_Marine.dir/Source/main.cpp.o" \
+"CMakeFiles/Space_Marine.dir/Source/Character.cpp.o" \
+"CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o" \
+"CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o"
 
 # External object files for target Space_Marine
 Space_Marine_EXTERNAL_OBJECTS =
 
-Space_Marine: CMakeFiles/Space_Marine.dir/main.cpp.o
-Space_Marine: CMakeFiles/Space_Marine.dir/Character.cpp.o
-Space_Marine: CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/main.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/Character.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o
 Space_Marine: CMakeFiles/Space_Marine.dir/build.make
 Space_Marine: CMakeFiles/Space_Marine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Space_Marine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Space_Marine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Marine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,9 +177,10 @@ CMakeFiles/Space_Marine.dir/build: Space_Marine
 
 .PHONY : CMakeFiles/Space_Marine.dir/build
 
-CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/main.cpp.o.requires
-CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Character.cpp.o.requires
-CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/main.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/Character.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o.requires
 
 .PHONY : CMakeFiles/Space_Marine.dir/requires
 
@@ -162,6 +189,6 @@ CMakeFiles/Space_Marine.dir/clean:
 .PHONY : CMakeFiles/Space_Marine.dir/clean
 
 CMakeFiles/Space_Marine.dir/depend:
-	cd /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeandsmith/Documents/CLion/Space-Marine /home/jeandsmith/Documents/CLion/Space-Marine /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles/Space_Marine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeandsmith/Documents/CLion/Terminal-Democracy /home/jeandsmith/Documents/CLion/Terminal-Democracy /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Space_Marine.dir/depend
 

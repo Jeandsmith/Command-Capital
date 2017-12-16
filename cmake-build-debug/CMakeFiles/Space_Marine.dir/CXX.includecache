@@ -6,21 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp
-Headers/Character.h
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
-
-/home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp
-Headers/Command_Repo.h
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h
-
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
 iostream
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/iostream
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/iostream
 string
 -
 
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h
 iostream
 -
 unordered_map
@@ -29,10 +21,32 @@ vector
 -
 map
 -
+list
+-
 Character.h
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
 
-/home/jeandsmith/Documents/CLion/Space-Marine/main.cpp
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h
+iostream
+-
+fstream
+-
+
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp
+../Headers/Character.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
+
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp
+fstream
+-
+../Headers/Command_Repo.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h
+
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp
+../Headers/GameSettings.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h
+
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp
 iostream
 -
 random
@@ -47,12 +61,14 @@ string
 -
 map
 -
-array
--
 unordered_map
 -
-Headers/Character.h
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Character.h
-Headers/Command_Repo.h
-/home/jeandsmith/Documents/CLion/Space-Marine/Headers/Command_Repo.h
+fstream
+-
+../Headers/Character.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
+../Headers/Command_Repo.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h
+../Headers/GameSettings.h
+/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h
 

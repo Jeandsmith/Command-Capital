@@ -48,10 +48,10 @@ RM = /home/jeandsmith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.11
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeandsmith/Documents/CLion/Space-Marine
+CMAKE_SOURCE_DIR = /home/jeandsmith/Documents/CLion/Terminal-Democracy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,86 +123,113 @@ Space_Marine/fast:
 	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/build
 .PHONY : Space_Marine/fast
 
-Character.o: Character.cpp.o
+Source/Character.o: Source/Character.cpp.o
 
-.PHONY : Character.o
-
-# target to build an object file
-Character.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Character.cpp.o
-.PHONY : Character.cpp.o
-
-Character.i: Character.cpp.i
-
-.PHONY : Character.i
-
-# target to preprocess a source file
-Character.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Character.cpp.i
-.PHONY : Character.cpp.i
-
-Character.s: Character.cpp.s
-
-.PHONY : Character.s
-
-# target to generate assembly for a file
-Character.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Character.cpp.s
-.PHONY : Character.cpp.s
-
-Command_Repo.o: Command_Repo.cpp.o
-
-.PHONY : Command_Repo.o
+.PHONY : Source/Character.o
 
 # target to build an object file
-Command_Repo.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o
-.PHONY : Command_Repo.cpp.o
+Source/Character.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.o
+.PHONY : Source/Character.cpp.o
 
-Command_Repo.i: Command_Repo.cpp.i
+Source/Character.i: Source/Character.cpp.i
 
-.PHONY : Command_Repo.i
+.PHONY : Source/Character.i
 
 # target to preprocess a source file
-Command_Repo.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Command_Repo.cpp.i
-.PHONY : Command_Repo.cpp.i
+Source/Character.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.i
+.PHONY : Source/Character.cpp.i
 
-Command_Repo.s: Command_Repo.cpp.s
+Source/Character.s: Source/Character.cpp.s
 
-.PHONY : Command_Repo.s
+.PHONY : Source/Character.s
 
 # target to generate assembly for a file
-Command_Repo.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Command_Repo.cpp.s
-.PHONY : Command_Repo.cpp.s
+Source/Character.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.s
+.PHONY : Source/Character.cpp.s
 
-main.o: main.cpp.o
+Source/Command_Repo.o: Source/Command_Repo.cpp.o
 
-.PHONY : main.o
+.PHONY : Source/Command_Repo.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/main.cpp.o
-.PHONY : main.cpp.o
+Source/Command_Repo.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o
+.PHONY : Source/Command_Repo.cpp.o
 
-main.i: main.cpp.i
+Source/Command_Repo.i: Source/Command_Repo.cpp.i
 
-.PHONY : main.i
+.PHONY : Source/Command_Repo.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/main.cpp.i
-.PHONY : main.cpp.i
+Source/Command_Repo.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.i
+.PHONY : Source/Command_Repo.cpp.i
 
-main.s: main.cpp.s
+Source/Command_Repo.s: Source/Command_Repo.cpp.s
 
-.PHONY : main.s
+.PHONY : Source/Command_Repo.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/main.cpp.s
-.PHONY : main.cpp.s
+Source/Command_Repo.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.s
+.PHONY : Source/Command_Repo.cpp.s
+
+Source/GameSettings.o: Source/GameSettings.cpp.o
+
+.PHONY : Source/GameSettings.o
+
+# target to build an object file
+Source/GameSettings.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o
+.PHONY : Source/GameSettings.cpp.o
+
+Source/GameSettings.i: Source/GameSettings.cpp.i
+
+.PHONY : Source/GameSettings.i
+
+# target to preprocess a source file
+Source/GameSettings.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.i
+.PHONY : Source/GameSettings.cpp.i
+
+Source/GameSettings.s: Source/GameSettings.cpp.s
+
+.PHONY : Source/GameSettings.s
+
+# target to generate assembly for a file
+Source/GameSettings.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.s
+.PHONY : Source/GameSettings.cpp.s
+
+Source/main.o: Source/main.cpp.o
+
+.PHONY : Source/main.o
+
+# target to build an object file
+Source/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/main.cpp.o
+.PHONY : Source/main.cpp.o
+
+Source/main.i: Source/main.cpp.i
+
+.PHONY : Source/main.i
+
+# target to preprocess a source file
+Source/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/main.cpp.i
+.PHONY : Source/main.cpp.i
+
+Source/main.s: Source/main.cpp.s
+
+.PHONY : Source/main.s
+
+# target to generate assembly for a file
+Source/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/main.cpp.s
+.PHONY : Source/main.cpp.s
 
 # Help Target
 help:
@@ -213,15 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Space_Marine"
-	@echo "... Character.o"
-	@echo "... Character.i"
-	@echo "... Character.s"
-	@echo "... Command_Repo.o"
-	@echo "... Command_Repo.i"
-	@echo "... Command_Repo.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Source/Character.o"
+	@echo "... Source/Character.i"
+	@echo "... Source/Character.s"
+	@echo "... Source/Command_Repo.o"
+	@echo "... Source/Command_Repo.i"
+	@echo "... Source/Command_Repo.s"
+	@echo "... Source/GameSettings.o"
+	@echo "... Source/GameSettings.i"
+	@echo "... Source/GameSettings.s"
+	@echo "... Source/main.o"
+	@echo "... Source/main.i"
+	@echo "... Source/main.s"
 .PHONY : help
 
 

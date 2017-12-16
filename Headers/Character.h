@@ -23,13 +23,15 @@ class Character {
 
 	string class_type();
 
-	void info();
+	void get_info ();
 
 	void deduct_cost(double cost);
 
 	void set_name(string name);
 
 	void set_class(string classs);
+
+	void set_initial_capital (double cap);
 };
 
 

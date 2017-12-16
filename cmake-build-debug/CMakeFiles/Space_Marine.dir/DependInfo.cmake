@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jeandsmith/Documents/CLion/Space-Marine/Character.cpp" "/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles/Space_Marine.dir/Character.cpp.o"
-  "/home/jeandsmith/Documents/CLion/Space-Marine/Command_Repo.cpp" "/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles/Space_Marine.dir/Command_Repo.cpp.o"
-  "/home/jeandsmith/Documents/CLion/Space-Marine/main.cpp" "/home/jeandsmith/Documents/CLion/Space-Marine/cmake-build-debug/CMakeFiles/Space_Marine.dir/main.cpp.o"
+  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/Character.cpp.o"
+  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o"
+  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o"
+  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
