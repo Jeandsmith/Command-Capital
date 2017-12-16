@@ -26,12 +26,6 @@ list
 Character.h
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
 
-/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h
-iostream
--
-fstream
--
-
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp
 ../Headers/Character.h
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
@@ -42,22 +36,12 @@ fstream
 ../Headers/Command_Repo.h
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h
 
-/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp
-../Headers/GameSettings.h
-/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h
-
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp
 iostream
 -
 random
 -
 algorithm
--
-iomanip
--
-stdio.h
--
-string
 -
 map
 -
@@ -69,6 +53,4 @@ fstream
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h
 ../Headers/Command_Repo.h
 /home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h
-../Headers/GameSettings.h
-/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h
 

@@ -17,19 +17,21 @@ class Character {
 	double initial_income = 0;
 
     public:
-	Character() = default;
+	Character () = default;
 
-	double init_incom();
+	double init_incom ();
 
-	string class_type();
+	string get_class_type ();
 
 	void get_info ();
 
-	void deduct_cost(double cost);
+	string get_name ();
 
-	void set_name(string name);
+	void deduct_cost (double cost);
 
-	void set_class(string classs);
+	void set_name (string name);
+
+	void set_class (string classs);
 
 	void set_initial_capital (double cap);
 };

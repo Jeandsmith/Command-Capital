@@ -90,16 +90,10 @@
 		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/GameSettings.h">
-			<Option target="Space_Marine"/>
-		</Unit>
 		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
 		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp">
-			<Option target="Space_Marine"/>
-		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
 		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp">

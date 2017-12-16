@@ -177,33 +177,6 @@ Source/Command_Repo.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.s
 .PHONY : Source/Command_Repo.cpp.s
 
-Source/GameSettings.o: Source/GameSettings.cpp.o
-
-.PHONY : Source/GameSettings.o
-
-# target to build an object file
-Source/GameSettings.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o
-.PHONY : Source/GameSettings.cpp.o
-
-Source/GameSettings.i: Source/GameSettings.cpp.i
-
-.PHONY : Source/GameSettings.i
-
-# target to preprocess a source file
-Source/GameSettings.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.i
-.PHONY : Source/GameSettings.cpp.i
-
-Source/GameSettings.s: Source/GameSettings.cpp.s
-
-.PHONY : Source/GameSettings.s
-
-# target to generate assembly for a file
-Source/GameSettings.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.s
-.PHONY : Source/GameSettings.cpp.s
-
 Source/main.o: Source/main.cpp.o
 
 .PHONY : Source/main.o
@@ -246,9 +219,6 @@ help:
 	@echo "... Source/Command_Repo.o"
 	@echo "... Source/Command_Repo.i"
 	@echo "... Source/Command_Repo.s"
-	@echo "... Source/GameSettings.o"
-	@echo "... Source/GameSettings.i"
-	@echo "... Source/GameSettings.s"
 	@echo "... Source/main.o"
 	@echo "... Source/main.i"
 	@echo "... Source/main.s"

@@ -8,11 +8,7 @@ CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o: ../Headers/Character.h
 CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o: ../Headers/Command_Repo.h
 CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o: ../Source/Command_Repo.cpp
 
-CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o: ../Headers/GameSettings.h
-CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o: ../Source/GameSettings.cpp
-
 CMakeFiles/Space_Marine.dir/Source/main.cpp.o: ../Headers/Character.h
 CMakeFiles/Space_Marine.dir/Source/main.cpp.o: ../Headers/Command_Repo.h
-CMakeFiles/Space_Marine.dir/Source/main.cpp.o: ../Headers/GameSettings.h
 CMakeFiles/Space_Marine.dir/Source/main.cpp.o: ../Source/main.cpp
 

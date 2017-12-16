@@ -18,24 +18,30 @@ using namespace std;
 class Command_Repo {
     private:
 	unordered_map<string, double> list{};
+	Character * player;
 
     public:
-
 	explicit Command_Repo () = default;
 
-	void end_game();
+	explicit Command_Repo(Character *current_player);
 
-	void execute_command(string & command);
+	void end_game ();
 
-	void clear_screen();
+	void execute_command (string &command);
 
-	void list_commands();
+	void clear_screen ();
 
-	void sell_items();
+	void list_commands ();
 
-	void buy_item (Character player);
+	void sell_items ();
+
+	void buy_item ();
 
 	void set_list ();
+
+	void give_info();
+
+	void save_game();
 };
 
 

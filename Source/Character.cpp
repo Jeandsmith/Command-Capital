@@ -12,8 +12,12 @@ void Character::set_initial_capital (double cap) {
 	this->initial_income = cap;
 }
 
-string Character::class_type () {
+string Character::get_class_type () {
 	return this->c_class;
+}
+
+string Character::get_name(){
+	return this->c_name;
 }
 
 void Character::set_name (string name) {

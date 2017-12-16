@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/Character.cpp.o"
   "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o"
-  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/GameSettings.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/GameSettings.cpp.o"
   "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

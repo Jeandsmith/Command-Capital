@@ -1,9 +1,10 @@
 << =========================================================================
 << =                          List of Commands                             =
 << =========================================================================
-<< my-get_info --> View your information
+<< my-info --> View your information
 << sell-items --> Sell items you don't need anymore.
 << buy-items --> Buy items evadable in the city or other merchants
 << expand-env --> With enough money, expand your environment to boost income
 << clear --> Clear the screen
 << show-items --> Show a list in detail of the items you currently have
+<< save-game --> Save the current state of the game.
