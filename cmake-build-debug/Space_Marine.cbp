@@ -84,16 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Character.h">
+		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/character.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/Command_Repo.h">
+		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/command_repo.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp">
+		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/economy_controller.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp">
+		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/character.cpp">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/command_repo.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
 		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp">

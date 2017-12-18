@@ -1,0 +1,2 @@
+Enter \'help\' for list of commands.
+Enter \'exit\' to close the console.

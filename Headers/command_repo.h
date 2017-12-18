@@ -10,22 +10,21 @@
 #include <vector>
 #include <map>
 #include <list>
-#include "Character.h"
+#include "character.h"
+#include "economy_controller.h"
 
 
 using namespace std;
 
-class Command_Repo {
-    private:
-	unordered_map<string, double> list{};
-	Character * player;
+class command_repo {
+   private:
+	economy_controller * economyController = new economy_controller;
+	character player;
 
-    public:
-	explicit Command_Repo () = default;
+   public:
+	explicit command_repo () = default;
 
-	explicit Command_Repo(Character *current_player);
-
-	void end_game ();
+	void set_player (character & current_player);
 
 	void execute_command (string &command);
 
@@ -37,11 +36,11 @@ class Command_Repo {
 
 	void buy_item ();
 
-	void set_list ();
+	void give_info ();
 
-	void give_info();
+	void save_game ();
 
-	void save_game();
+	void new_game ();
 };
 
 

@@ -1,12 +1,9 @@
 #include <iostream>
 #include <random>
-#include <algorithm>
-#include <map>
-#include <unordered_map>
 #include <fstream>
 
-#include "../Headers/Character.h"
-#include "../Headers/Command_Repo.h"
+#include "../Headers/economy_controller.h"
+#include "../Headers/command_repo.h"
 
 using namespace std;
 
@@ -27,113 +24,72 @@ void intro_screen () {
 	title_screen.close();
 }
 
-void get_user_information (Character &player) {
-	cout << "Name of character: ";
-	string ch_name;
-
-	while (getline(cin, ch_name)) {
-		if (ch_name.empty()) {
-			cout << "Field is empty" << std::endl;
-			cout << "Try again: " << std::endl;
-			goto getinput;
-		} else {
-			void get_class (Character &);
-			player.set_name(ch_name);
-			get_class(player);
-			break;
+void show_instructions () {
+	ifstream ins{R"(../text_files/instructions.txt)"};
+	if (ins.fail()) {
+		cout << "Could not open" << endl;
+	} else {
+		while (!ins.eof()) {
+			string line;
+			getline(ins, line);
+			cout << line << endl;
 		}
-		getinput:
-		getline(cin, ch_name);
 	}
 
-	cout << "\n";
-}
-
-
-void get_class (Character &pl) {
-
-	cout << "Choose class" << endl;
-	cout << "Options --> " << endl;
-	cout << "\tBaker.======== 1" << endl;
-	cout << "\tBusiness.===== 2" << endl;
-	cout << "\tCommoner.===== 3" << endl;
-
-	int option = 1;
-	cin >> option;
-	while (option <= 0 || option > 3) {
-		cout << "Invalid option: " << endl;
-		cout << "Try again: " << endl;
-		cin >> option;
-	}
-
-	string c_class;
-	switch (option) {
-		case 1:
-			cout << "Baker class" << endl;
-			c_class = "Baker";
-			pl.set_class(c_class);
-			break;
-
-		case 2:
-			cout << "Business Class" << endl;
-			c_class = "Business";
-			pl.set_class(c_class);
-			break;
-
-		case 3:
-			cout << "Commoner class" << endl;
-			c_class = "Commoner";
-			pl.set_class(c_class);
-			break;
-
-		default:
-			break;
-	}
-
-	void set_initial_income (Character *);
-	set_initial_income(&pl);
-}
-
-void set_initial_income (Character *player) {
-	double init_cap = 0;
-	if (player->get_class_type() == "Baker") init_cap = 50.00f;
-	else if (player->get_class_type() == "Business") init_cap = 100.0f;
-	else if (player->get_class_type() == "Commoner") init_cap = 15.0f;
-
-	player->set_initial_capital(init_cap);
+	ins.close();
 }
 
 
 int main () {
-	srand(static_cast<unsigned>(time(nullptr)));
-
-	Character *player = new Character();
 	intro_screen();
-	cout << "Enter command->  \n";
-	cout << "Enter \'help\' for list of commands." << endl;
-	cout << "Enter \'exit\' to close the console." << endl;
-	cout << "Enter \'save\' to save the current player profile." << endl;
+	show_instructions();
+	srand(static_cast<unsigned>(time(nullptr)));
+	auto *player = new character();
+	command_repo command_r;
 
-	get_user_information(*player);
-	Command_Repo command_r(player);
-	string command;
+	// Check if there is player information the player data file
+	fstream player_data{R"(../text_files/saved_game_file.txt)", ios::in};
+
+	// Check if the file fail to open.
+	if (player_data.fail()) {
+		cout << "The file does not exist" << endl;
+		player_data.open(R"(../text_files/saved_game_file.txt)", ios::out);
+	}
+
+	player_data.seekg(0, ios::end); // Move the reading pos to the end of the file.
+	if (player_data.tellg() == 0) { // Return the size of bytes in the files (chars = 1 byte)
+		cout << '\n';
+		command_r.new_game();
+	} else {
+		player_data.seekg(0, ios::beg); // go back to the beginning of the file.
+		cout << "File Loaded" << endl;
+		string data;
+		vector<string> saved_data;
+		while (getline(player_data, data)) {
+			saved_data.push_back(data);
+		}
+		player->set_name(saved_data[0]);
+		player->set_class(saved_data[1]);
+		player->set_initial_capital(stod(saved_data[2]));
+		command_r.set_player(*player);
+		player_data.close();
+	}
+
+	cout << "Welcome: " << player->get_name() << endl;
 	cout << "Enter command:: ";
-	cin.ignore();
-	command.clear();
+	string command;
 	getline(cin, command);
 
-	while (command != "exit") {
-		cout << "\n";
-		if (command == "get-info") {
 
-		}
+	//TODO: Duplicate cout
+	while (command != "exit") {
 		command_r.execute_command(command);
-		command.clear();
-		cout << endl << endl;
-		cout << "Enter Command:: " << endl;
+		cout << "\n";
+
+		cout << "Enter Command: " << endl;
 		getline(cin, command);
 	}
 
-	delete (player);
+	delete player;
 	return 0;
 }

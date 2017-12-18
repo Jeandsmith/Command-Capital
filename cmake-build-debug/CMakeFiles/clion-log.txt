@@ -1,5 +1,4 @@
 /home/jeandsmith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jeandsmith/Documents/CLion/Terminal-Democracy
--- Boost version: 1.61.0
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug

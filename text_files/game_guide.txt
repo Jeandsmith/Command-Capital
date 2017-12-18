@@ -8,3 +8,4 @@
 << clear --> Clear the screen
 << show-items --> Show a list in detail of the items you currently have
 << save-game --> Save the current state of the game.
+<< new-game --> Start a new game.

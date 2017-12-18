@@ -10,16 +10,16 @@
 
 using namespace std;
 
-class Character {
+class character {
     private:
-	string c_name = " ";
-	string c_class = " ";
+	string c_name;
+	string c_class;
 	double initial_income = 0;
 
     public:
-	Character () = default;
+	explicit character () = default;
 
-	double init_incom ();
+	double income ();
 
 	string get_class_type ();
 
@@ -29,9 +29,9 @@ class Character {
 
 	void deduct_cost (double cost);
 
-	void set_name (string name);
+	void set_name (string & name);
 
-	void set_class (string classs);
+	void set_class (string & classs);
 
 	void set_initial_capital (double cap);
 };

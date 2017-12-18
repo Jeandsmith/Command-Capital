@@ -123,59 +123,59 @@ Space_Marine/fast:
 	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/build
 .PHONY : Space_Marine/fast
 
-Source/Character.o: Source/Character.cpp.o
+Source/character.o: Source/character.cpp.o
 
-.PHONY : Source/Character.o
-
-# target to build an object file
-Source/Character.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.o
-.PHONY : Source/Character.cpp.o
-
-Source/Character.i: Source/Character.cpp.i
-
-.PHONY : Source/Character.i
-
-# target to preprocess a source file
-Source/Character.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.i
-.PHONY : Source/Character.cpp.i
-
-Source/Character.s: Source/Character.cpp.s
-
-.PHONY : Source/Character.s
-
-# target to generate assembly for a file
-Source/Character.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Character.cpp.s
-.PHONY : Source/Character.cpp.s
-
-Source/Command_Repo.o: Source/Command_Repo.cpp.o
-
-.PHONY : Source/Command_Repo.o
+.PHONY : Source/character.o
 
 # target to build an object file
-Source/Command_Repo.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o
-.PHONY : Source/Command_Repo.cpp.o
+Source/character.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/character.cpp.o
+.PHONY : Source/character.cpp.o
 
-Source/Command_Repo.i: Source/Command_Repo.cpp.i
+Source/character.i: Source/character.cpp.i
 
-.PHONY : Source/Command_Repo.i
+.PHONY : Source/character.i
 
 # target to preprocess a source file
-Source/Command_Repo.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.i
-.PHONY : Source/Command_Repo.cpp.i
+Source/character.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/character.cpp.i
+.PHONY : Source/character.cpp.i
 
-Source/Command_Repo.s: Source/Command_Repo.cpp.s
+Source/character.s: Source/character.cpp.s
 
-.PHONY : Source/Command_Repo.s
+.PHONY : Source/character.s
 
 # target to generate assembly for a file
-Source/Command_Repo.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.s
-.PHONY : Source/Command_Repo.cpp.s
+Source/character.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/character.cpp.s
+.PHONY : Source/character.cpp.s
+
+Source/command_repo.o: Source/command_repo.cpp.o
+
+.PHONY : Source/command_repo.o
+
+# target to build an object file
+Source/command_repo.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o
+.PHONY : Source/command_repo.cpp.o
+
+Source/command_repo.i: Source/command_repo.cpp.i
+
+.PHONY : Source/command_repo.i
+
+# target to preprocess a source file
+Source/command_repo.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.i
+.PHONY : Source/command_repo.cpp.i
+
+Source/command_repo.s: Source/command_repo.cpp.s
+
+.PHONY : Source/command_repo.s
+
+# target to generate assembly for a file
+Source/command_repo.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.s
+.PHONY : Source/command_repo.cpp.s
 
 Source/main.o: Source/main.cpp.o
 
@@ -213,12 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Space_Marine"
-	@echo "... Source/Character.o"
-	@echo "... Source/Character.i"
-	@echo "... Source/Character.s"
-	@echo "... Source/Command_Repo.o"
-	@echo "... Source/Command_Repo.i"
-	@echo "... Source/Command_Repo.s"
+	@echo "... Source/character.o"
+	@echo "... Source/character.i"
+	@echo "... Source/character.s"
+	@echo "... Source/command_repo.o"
+	@echo "... Source/command_repo.i"
+	@echo "... Source/command_repo.s"
 	@echo "... Source/main.o"
 	@echo "... Source/main.i"
 	@echo "... Source/main.s"

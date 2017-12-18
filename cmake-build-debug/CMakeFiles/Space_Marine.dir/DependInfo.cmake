@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Character.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/Character.cpp.o"
-  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/Command_Repo.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/Command_Repo.cpp.o"
+  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/character.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/character.cpp.o"
+  "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/command_repo.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o"
   "/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp" "/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
