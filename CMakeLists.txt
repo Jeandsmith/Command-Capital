@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 project(Space_Marine)
 
-find_package(Boost)
-
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES Source/main.cpp Source/Character.cpp Headers/Character.h Source/Command_Repo.cpp Headers/Command_Repo.h)
+set(SOURCE_FILES Source/main.cpp Source/character.cpp Headers/character.h Source/command_repo.cpp Headers/command_repo.h Headers/economy_controller.h)
 add_executable(Space_Marine ${SOURCE_FILES})
