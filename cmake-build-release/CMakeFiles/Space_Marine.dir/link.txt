@@ -1,1 +1,1 @@
-/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/Space_Marine.dir/Source/main.cpp.o CMakeFiles/Space_Marine.dir/Source/character.cpp.o CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o  -o Space_Marine 
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/Space_Marine.dir/Source/main.cpp.o CMakeFiles/Space_Marine.dir/Source/character.cpp.o CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o CMakeFiles/Space_Marine.dir/Source/console.cpp.o  -o Space_Marine 

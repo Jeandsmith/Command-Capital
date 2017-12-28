@@ -177,6 +177,87 @@ Source/command_repo.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.s
 .PHONY : Source/command_repo.cpp.s
 
+Source/console.o: Source/console.cpp.o
+
+.PHONY : Source/console.o
+
+# target to build an object file
+Source/console.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/console.cpp.o
+.PHONY : Source/console.cpp.o
+
+Source/console.i: Source/console.cpp.i
+
+.PHONY : Source/console.i
+
+# target to preprocess a source file
+Source/console.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/console.cpp.i
+.PHONY : Source/console.cpp.i
+
+Source/console.s: Source/console.cpp.s
+
+.PHONY : Source/console.s
+
+# target to generate assembly for a file
+Source/console.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/console.cpp.s
+.PHONY : Source/console.cpp.s
+
+Source/economy_controller.o: Source/economy_controller.cpp.o
+
+.PHONY : Source/economy_controller.o
+
+# target to build an object file
+Source/economy_controller.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o
+.PHONY : Source/economy_controller.cpp.o
+
+Source/economy_controller.i: Source/economy_controller.cpp.i
+
+.PHONY : Source/economy_controller.i
+
+# target to preprocess a source file
+Source/economy_controller.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.i
+.PHONY : Source/economy_controller.cpp.i
+
+Source/economy_controller.s: Source/economy_controller.cpp.s
+
+.PHONY : Source/economy_controller.s
+
+# target to generate assembly for a file
+Source/economy_controller.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.s
+.PHONY : Source/economy_controller.cpp.s
+
+Source/input_check.o: Source/input_check.cpp.o
+
+.PHONY : Source/input_check.o
+
+# target to build an object file
+Source/input_check.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o
+.PHONY : Source/input_check.cpp.o
+
+Source/input_check.i: Source/input_check.cpp.i
+
+.PHONY : Source/input_check.i
+
+# target to preprocess a source file
+Source/input_check.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/input_check.cpp.i
+.PHONY : Source/input_check.cpp.i
+
+Source/input_check.s: Source/input_check.cpp.s
+
+.PHONY : Source/input_check.s
+
+# target to generate assembly for a file
+Source/input_check.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/input_check.cpp.s
+.PHONY : Source/input_check.cpp.s
+
 Source/main.o: Source/main.cpp.o
 
 .PHONY : Source/main.o
@@ -219,6 +300,15 @@ help:
 	@echo "... Source/command_repo.o"
 	@echo "... Source/command_repo.i"
 	@echo "... Source/command_repo.s"
+	@echo "... Source/console.o"
+	@echo "... Source/console.i"
+	@echo "... Source/console.s"
+	@echo "... Source/economy_controller.o"
+	@echo "... Source/economy_controller.i"
+	@echo "... Source/economy_controller.s"
+	@echo "... Source/input_check.o"
+	@echo "... Source/input_check.i"
+	@echo "... Source/input_check.s"
 	@echo "... Source/main.o"
 	@echo "... Source/main.i"
 	@echo "... Source/main.s"

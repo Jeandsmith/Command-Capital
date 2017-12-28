@@ -90,13 +90,28 @@
 		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/command_repo.h">
 			<Option target="Space_Marine"/>
 		</Unit>
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/console.h">
+			<Option target="Space_Marine"/>
+		</Unit>
 		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h">
 			<Option target="Space_Marine"/>
 		</Unit>
 		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/character.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
 		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/command_repo.cpp">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/console.cpp">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp">
+			<Option target="Space_Marine"/>
+		</Unit>
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
 		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/main.cpp">

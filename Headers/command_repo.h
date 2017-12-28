@@ -13,34 +13,35 @@
 #include "character.h"
 #include "economy_controller.h"
 
-
-using namespace std;
-
 class command_repo {
-   private:
-	economy_controller * economyController = new economy_controller;
-	character player;
+private:
+    unique_ptr<economy_controller> _controller{new economy_controller};
+    unique_ptr<character> _unique_player;
 
-   public:
-	explicit command_repo () = default;
+public:
+    explicit command_repo() = default;
 
-	void set_player (character & current_player);
+    void set_player(std::unique_ptr<character> &current_player);
 
-	void execute_command (string &command);
+    void execute_command(string &command);
 
-	void clear_screen ();
+    void get_class(std::unique_ptr<character> &player);
 
-	void list_commands ();
+    void get_user_information(std::unique_ptr<character> &player);
 
-	void sell_items ();
+    void clear_screen();
 
-	void buy_item ();
+    void list_commands();
 
-	void give_info ();
+//    void sell_items();
 
-	void save_game ();
+    void buy_item();
 
-	void new_game ();
+    void give_info();
+
+    void save_game();
+
+    void new_game();
 };
 
 

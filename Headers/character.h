@@ -5,35 +5,35 @@
 #ifndef SPACE_MARINE_CHARACTER_H
 #define SPACE_MARINE_CHARACTER_H
 
-#include "iostream"
+#include <iostream>
 #include <string>
 
-using namespace std;
-
 class character {
-    private:
-	string c_name;
-	string c_class;
-	double initial_income = 0;
+private:
+    std::string _c_name{};
+    std::string _c_class{};
+    double initial_income = 0;
 
-    public:
-	explicit character () = default;
+public:
+    explicit character() = default;
 
-	double income ();
+    explicit character(std::string & player_name): _c_name(player_name){};
 
-	string get_class_type ();
+    double income();
 
-	void get_info ();
+    std::string get_class_type() const;
 
-	string get_name ();
+    void get_info() const;
 
-	void deduct_cost (double cost);
+    std::string get_name() const;
 
-	void set_name (string & name);
+    void deduct_cost(double cost);
 
-	void set_class (string & classs);
+    void set_name(std::string &name);
 
-	void set_initial_capital (double cap);
+    void set_class(std::string &classs);
+
+    void set_initial_capital(double & cap);
 };
 
 

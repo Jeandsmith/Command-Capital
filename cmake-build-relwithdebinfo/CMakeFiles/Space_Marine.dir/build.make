@@ -129,11 +129,86 @@ CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o.provides: CMakeFiles/Space
 CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o
 
 
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o: ../Source/economy_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Desktop/Command-Capital/cmake-build-relwithdebinfo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o -c /home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp
+
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp > CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.i
+
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp -o CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.s
+
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.requires
+
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.provides
+
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o
+
+
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o: ../Source/input_check.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Desktop/Command-Capital/cmake-build-relwithdebinfo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o -c /home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp
+
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/input_check.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp > CMakeFiles/Space_Marine.dir/Source/input_check.cpp.i
+
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/input_check.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp -o CMakeFiles/Space_Marine.dir/Source/input_check.cpp.s
+
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.requires
+
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.provides
+
+CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o
+
+
+CMakeFiles/Space_Marine.dir/Source/console.cpp.o: CMakeFiles/Space_Marine.dir/flags.make
+CMakeFiles/Space_Marine.dir/Source/console.cpp.o: ../Source/console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jeandsmith/Desktop/Command-Capital/cmake-build-relwithdebinfo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Space_Marine.dir/Source/console.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Marine.dir/Source/console.cpp.o -c /home/jeandsmith/Desktop/Command-Capital/Source/console.cpp
+
+CMakeFiles/Space_Marine.dir/Source/console.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Marine.dir/Source/console.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jeandsmith/Desktop/Command-Capital/Source/console.cpp > CMakeFiles/Space_Marine.dir/Source/console.cpp.i
+
+CMakeFiles/Space_Marine.dir/Source/console.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Marine.dir/Source/console.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jeandsmith/Desktop/Command-Capital/Source/console.cpp -o CMakeFiles/Space_Marine.dir/Source/console.cpp.s
+
+CMakeFiles/Space_Marine.dir/Source/console.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Marine.dir/Source/console.cpp.o.requires
+
+CMakeFiles/Space_Marine.dir/Source/console.cpp.o.provides: CMakeFiles/Space_Marine.dir/Source/console.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Marine.dir/build.make CMakeFiles/Space_Marine.dir/Source/console.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Marine.dir/Source/console.cpp.o.provides
+
+CMakeFiles/Space_Marine.dir/Source/console.cpp.o.provides.build: CMakeFiles/Space_Marine.dir/Source/console.cpp.o
+
+
 # Object files for target Space_Marine
 Space_Marine_OBJECTS = \
 "CMakeFiles/Space_Marine.dir/Source/main.cpp.o" \
 "CMakeFiles/Space_Marine.dir/Source/character.cpp.o" \
-"CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o"
+"CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o" \
+"CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o" \
+"CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o" \
+"CMakeFiles/Space_Marine.dir/Source/console.cpp.o"
 
 # External object files for target Space_Marine
 Space_Marine_EXTERNAL_OBJECTS =
@@ -141,9 +216,12 @@ Space_Marine_EXTERNAL_OBJECTS =
 Space_Marine: CMakeFiles/Space_Marine.dir/Source/main.cpp.o
 Space_Marine: CMakeFiles/Space_Marine.dir/Source/character.cpp.o
 Space_Marine: CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o
+Space_Marine: CMakeFiles/Space_Marine.dir/Source/console.cpp.o
 Space_Marine: CMakeFiles/Space_Marine.dir/build.make
 Space_Marine: CMakeFiles/Space_Marine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeandsmith/Desktop/Command-Capital/cmake-build-relwithdebinfo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Space_Marine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jeandsmith/Desktop/Command-Capital/cmake-build-relwithdebinfo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Space_Marine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Marine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +232,9 @@ CMakeFiles/Space_Marine.dir/build: Space_Marine
 CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/main.cpp.o.requires
 CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/character.cpp.o.requires
 CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o.requires
+CMakeFiles/Space_Marine.dir/requires: CMakeFiles/Space_Marine.dir/Source/console.cpp.o.requires
 
 .PHONY : CMakeFiles/Space_Marine.dir/requires
 
