@@ -1,6 +1,6 @@
-/home/jeandsmith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/jeandsmith/Documents/CLion/Terminal-Democracy
--- The C compiler identification is GNU 4.8.5
--- The CXX compiler identification is GNU 4.8.5
+/home/jeandsmith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.32/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/jeandsmith/Desktop/Command-Capital
+-- The C compiler identification is GNU 7.2.1
+-- The CXX compiler identification is GNU 7.2.1
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-default
+-- Build files have been written to: /home/jeandsmith/Desktop/Command-Capital/cmake-build-default

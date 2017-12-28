@@ -8,101 +8,101 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release"/>
+				<Option working_dir="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release"/>
+				<Option working_dir="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release"/>
+				<Option working_dir="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Space_Marine">
-				<Option output="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Space_Marine" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release"/>
+				<Option output="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Space_Marine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/x86_64-suse-linux"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/c++/7/x86_64-suse-linux"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include-fixed"/>
-					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 Space_Marine"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 Space_Marine"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Space_Marine/fast">
-				<Option output="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Space_Marine" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release"/>
+				<Option output="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Space_Marine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jeandsmith/Desktop/Command-Capital/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/x86_64-suse-linux"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/c++/7/x86_64-suse-linux"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include-fixed"/>
-					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/include"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/include-fixed"/>
+					<Add directory="/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/include"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 Space_Marine/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Documents/CLion/Terminal-Democracy/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 Space_Marine/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jeandsmith/Desktop/Command-Capital/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/character.h">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/character.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/command_repo.h">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/command_repo.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Headers/economy_controller.h">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/character.cpp">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/character.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/command_repo.cpp">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/command_repo.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/Source/main.cpp">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/Source/main.cpp">
 			<Option target="Space_Marine"/>
 		</Unit>
-		<Unit filename="/home/jeandsmith/Documents/CLion/Terminal-Democracy/CMakeLists.txt">
+		<Unit filename="/home/jeandsmith/Desktop/Command-Capital/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
