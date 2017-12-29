@@ -15,6 +15,7 @@ CMakeFiles/Space_Marine.dir/Source/console.cpp.o: ../Source/console.cpp
 
 CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o: ../Headers/character.h
 CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o: ../Headers/economy_controller.h
+CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o: ../Headers/input_check.h
 CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o: ../Source/economy_controller.cpp
 
 CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o: ../Headers/console.h

@@ -75,6 +75,8 @@ cstdarg
 /home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp
 ../Headers/economy_controller.h
 /home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h
+../Headers/input_check.h
+/home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
 
 /home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp
 string
