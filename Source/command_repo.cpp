@@ -4,8 +4,7 @@
 
 #include <fstream>
 #include "../Headers/command_repo.h"
-#include <string>
-#include <iostream>
+#include "../Headers/console.h"
 
 void command_repo::set_player(unique_ptr<character> &current_player) {
     this->_unique_player = std::move(current_player);
@@ -29,8 +28,6 @@ void command_repo::execute_command(string &command) {
             function_pointer pt = c_map[com.first]; // Make a pointer to the function saved as s value of the command
             (this->*pt)(); // Run the function pointed to this member function.
             break;
-        } else if (c_map.find(com.first) == c_map.end()) {
-            cout << "Command not found:: " << endl;
         }
     }
 }
@@ -38,12 +35,12 @@ void command_repo::execute_command(string &command) {
 void command_repo::save_game() {
     fstream save_game_file{R"(../text_files/saved_game_file.txt)", ios::out};
     if (save_game_file.fail()) {
-        cout << "Error Occurred" << endl;
+        console::log("Error Occurred");
     } else {
         save_game_file << _unique_player->get_name() << "\n";
         save_game_file << _unique_player->get_class_type() << "\n";
         save_game_file << _unique_player->income() << "\n";
-        cout << "Game Saved" << endl;
+        console::log("Game Saved");
         save_game_file.close();
     }
 }
@@ -57,9 +54,9 @@ void command_repo::give_info() {
 }
 
 void command_repo::clear_screen() {
-    cout << "\nScreen cleared" << endl;
+    console::log("clear_screen()");
     system("clear");
-};
+}
 
 void command_repo::list_commands() {
     fstream guide_file{"../text_files/game_guide.txt", ios::out | ios::in};
@@ -78,6 +75,7 @@ void command_repo::list_commands() {
 //void command_repo::sell_items () {
 //
 //}
+
 void command_repo::new_game() {
     get_user_information(_unique_player); // Dereference the object
 }
@@ -100,24 +98,25 @@ void command_repo::get_user_information(std::unique_ptr<character> &player) {
 }
 
 void command_repo::get_class(std::unique_ptr<character> &player) {
-    cout << "Options:  " << endl;
-    cout << "\tBaker.======== 1" << endl;
-    cout << "\tBusiness.===== 2" << endl;
-    cout << "\tCommoner.===== 3" << endl;
-    cout << "Choose class:  " << endl;
+    printf("Options:  \n");
+    printf("\tBaker.======== 1  \n");
+    printf("\tBusiness.===== 2 \n");
+    printf("\tCommoner.===== 3 \n");
+    printf("\tChoose class:   \n");
+
     int option = 0;
     cin >> option;
-
+    cin.ignore();
     while (option <= 0 || option > 3 || cin.fail()) {
-        cout << "Invalid option. " << endl;
-        cout << "Try again. " << '\n' << endl;
-        cin.clear();
+        printf("Invalid option. \n");
+        printf("Try again. \n");
 
         // std::streamsize: type representing the size and count of characters in the buffer.
         // numeric_limit: is used to determine the size limit of a type.
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "Choose class:   ";
+        printf("Choose class:   ");
         cin >> option;
+        cin.ignore();
     }
 
     string c_class;
@@ -129,19 +128,19 @@ void command_repo::get_class(std::unique_ptr<character> &player) {
 
     switch (option) {
         case class_option::baker :
-            cout << "Baker class" << endl;
+            printf("Baker class \n");
             c_class = "Baker";
             player->set_class(c_class);
             break;
 
         case class_option::business :
-            cout << "Business Class" << endl;
+            printf("Business Class \n");
             c_class = "Business";
             player->set_class(c_class);
             break;
 
         case class_option::commoner :
-            cout << "Commoner class" << endl;
+            printf("Commoner class \n");
             c_class = "Commoner";
             player->set_class(c_class);
             break;

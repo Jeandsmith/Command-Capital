@@ -6,6 +6,7 @@ CMakeFiles/Space_Marine.dir/Source/character.cpp.o: ../Source/character.cpp
 
 CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o: ../Headers/character.h
 CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o: ../Headers/command_repo.h
+CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o: ../Headers/console.h
 CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o: ../Headers/economy_controller.h
 CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o: ../Source/command_repo.cpp
 

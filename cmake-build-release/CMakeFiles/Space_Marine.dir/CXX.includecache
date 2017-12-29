@@ -61,13 +61,13 @@ fstream
 -
 ../Headers/command_repo.h
 /home/jeandsmith/Desktop/Command-Capital/Headers/command_repo.h
-string
--
-iostream
--
+../Headers/console.h
+/home/jeandsmith/Desktop/Command-Capital/Headers/console.h
 
 /home/jeandsmith/Desktop/Command-Capital/Source/console.cpp
 cstdio
+-
+cstdarg
 -
 ../Headers/console.h
 /home/jeandsmith/Desktop/Command-Capital/Headers/console.h
@@ -77,6 +77,8 @@ cstdio
 /home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h
 
 /home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp
+string
+-
 ../Headers/input_check.h
 /home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
 ../Headers/console.h

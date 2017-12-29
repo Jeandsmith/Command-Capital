@@ -10,6 +10,7 @@ class console {
 
 public:
     static const void log(const char * msg);
+    static int debug_log(const char *msg, ...);
 };
 
 

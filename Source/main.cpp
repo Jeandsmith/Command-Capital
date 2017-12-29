@@ -47,8 +47,13 @@ int main() {
     intro_screen();
     show_instructions();
     srand(static_cast<unsigned>(time(nullptr)));
-    unique_ptr<character> player{new character()}; //Value initializer syntax {class(direct initializer syntax)}
-    unique_ptr<command_repo> command_r{new command_repo()};
+
+    // Nothrow will prevent the pointer from throwing a exception and instead be null(dangling pointer)
+    unique_ptr<character> player{new(nothrow) character}; //Value initializer syntax {class(direct initializer syntax)}
+    unique_ptr<command_repo> command_r{new(nothrow) command_repo()};
+    if (player == nullptr || command_r == nullptr) {
+        console::debug_log("The object: \n %p \n %p could not be created", &player);
+    }
 
     // Check if there is player information the player data file
     fstream player_data{R"(../text_files/saved_game_file.txt)", ios::in};
