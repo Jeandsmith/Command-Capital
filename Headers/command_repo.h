@@ -23,7 +23,7 @@ public:
 
     void set_player(std::unique_ptr<character> &current_player);
 
-    void execute_command(string &command);
+    void execute_command(const std::string &command);
 
     void get_class(std::unique_ptr<character> &player);
 

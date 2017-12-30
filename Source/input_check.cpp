@@ -3,30 +3,31 @@
 //
 
 #include <string>
+#include <streambuf>
+#include <iostream>
 #include "../Headers/input_check.h"
 #include "../Headers/console.h"
 
-//TODO
 std::string input_check::format_string(std::string &input) {
     console::log("formatting()");
-    if (input.empty()) {
-        input = " ";
+    if (input.empty()) { //If the first index is a null ending character
+        input = "Null";
         return input;
     }
 
     // Eliminate all white spaces
-    for (size_t i = input.size(); i > 0; --i) {
+    for (size_t i = input.size() - 1; input[i]; --i) {
         if (input[i] != ' ') { break; }
         else {
-            input.erase(input.find(input[i]));
+            puts("Erasing");
+            input.erase(static_cast<unsigned long>(input[i]));
         }
     }
 
-    // Change all characters to small case
-    for (char &c : input) {
-        if (c == toupper(c)) { continue; }
+    for (char & c : input) {
+        if (c == static_cast<char>(toupper(c))) { continue; }
+        puts("lowering");
         c = static_cast<char>(tolower(c));
-        if (c == '_') { c = '-'; }
     }
 
     console::debug_log("Formatted: %s", input.c_str());

@@ -24,7 +24,7 @@ void economy_controller::get_item_list() const {
     cout << '\n';
 }
 
-void economy_controller::pur_items(std::unique_ptr<character> &player) {
+void economy_controller::pur_items(const std::unique_ptr<character> &player) {
     printf("\tItem[name - cost]: \n");
     set_list_of_items();
     get_item_list();
@@ -34,12 +34,11 @@ void economy_controller::pur_items(std::unique_ptr<character> &player) {
     printf("Enter the name of the items you will purchase: \n");
     printf("\n");
 
-    string user_option{};
+    std::string user_option{};
     getline(cin, user_option);
-    user_option = input_check::format_string(user_option);
 
     //TODO: The program does not check options after the first wrong input.
-    while (user_option != "return" || user_option != "cancel") {
+    while (input_check::format_string(user_option) != "return" || input_check::format_string(user_option) != "cancel") {
 
         for (auto &item: list) {
             if (user_option == item.first) {
@@ -80,16 +79,12 @@ void economy_controller::pur_items(std::unique_ptr<character> &player) {
                 printf("\n\tCost: $%.2lf  \t\t\n \tIncome-Left: $%.2lf\n", cost, player->income());
                 break;
 
-            } else {
-                printf("Nothing found. ");
             }
         }
 
 
         bottom:
         printf("Enter another item name or enter return >> ");
-        cin.clear();
-        cin.ignore(256, '\n');
         getline(cin, user_option);
     }
 }

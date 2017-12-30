@@ -10,7 +10,7 @@ void command_repo::set_player(unique_ptr<character> &current_player) {
     this->_unique_player = std::move(current_player);
 }
 
-void command_repo::execute_command(string &command) {
+void command_repo::execute_command(const std::string &command) {
     typedef void (command_repo::*function_pointer)();
     typedef unordered_map<string, function_pointer> command_map;
 
@@ -23,7 +23,7 @@ void command_repo::execute_command(string &command) {
     c_map.emplace("buy-items", &command_repo::buy_item);
     c_map.emplace("new-game", &command_repo::new_game);
 
-    for (auto &com: c_map) {
+    for (auto &com: c_map) { ;
         if (com.first == command) { // If the command is found in the map
             function_pointer pt = c_map[com.first]; // Make a pointer to the function saved as s value of the command
             (this->*pt)(); // Run the function pointed to this member function.

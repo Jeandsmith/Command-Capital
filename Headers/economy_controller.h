@@ -24,7 +24,7 @@ private:
 
 public:
     void get_item_list() const;
-    void pur_items(std::unique_ptr<character> &player);
+    void pur_items(const std::unique_ptr<character> &player);
 };
 
 

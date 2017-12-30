@@ -88,11 +88,9 @@ int main() {
     printf("Welcome: %s \n", player->get_name().c_str());
     command_r->set_player(player);
     printf("Enter command:: \n");
-    string command;
+    std::string command{};
     getline(cin, command);
 
-
-    //TODO: Duplicate cout
     while (input_check::format_string(command) != "exit") {
         command_r->execute_command(command);
         printf("\n");

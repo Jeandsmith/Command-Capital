@@ -81,6 +81,10 @@ cstdarg
 /home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp
 string
 -
+streambuf
+-
+iostream
+-
 ../Headers/input_check.h
 /home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
 ../Headers/console.h
