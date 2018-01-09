@@ -14,34 +14,38 @@
 #include "economy_controller.h"
 
 class command_repo {
-private:
-    unique_ptr<economy_controller> _controller{new economy_controller};
-    unique_ptr<character> _unique_player;
+      typedef void (command_repo::*function_pointer)();
+      typedef unordered_map<string, function_pointer> command_map;
+      command_map c_map;
+      unique_ptr<economy_controller> _controller{new economy_controller};
+      unique_ptr<character> _unique_player;
 
 public:
-    explicit command_repo() = default;
+      explicit command_repo();
 
-    void set_player(std::unique_ptr<character> &current_player);
+      void set_commands();
 
-    void execute_command(const std::string &command);
+      void set_player(std::unique_ptr<character> &current_player);
 
-    void get_class(std::unique_ptr<character> &player);
+      void execute_command(const char *command);
 
-    void get_user_information(std::unique_ptr<character> &player);
+      void get_class(std::unique_ptr<character> &player);
 
-    void clear_screen();
+      void get_user_information(std::unique_ptr<character> &player);
 
-    void list_commands();
+      void clear_screen();
+
+      void list_commands();
 
 //    void sell_items();
 
-    void buy_item();
+      void buy_item();
 
-    void give_info();
+      void give_info();
 
-    void save_game();
+      void save_game();
 
-    void new_game();
+      void new_game();
 };
 
 

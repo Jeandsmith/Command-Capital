@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jeandsmith/Desktop/Command-Capital/Headers/character.h
+/home/james/Documents/Command-Capital/Headers/character.h
 iostream
 -
 string
 -
 
-/home/jeandsmith/Desktop/Command-Capital/Headers/command_repo.h
+/home/james/Documents/Command-Capital/Headers/command_repo.h
 iostream
 -
 unordered_map
@@ -24,13 +24,13 @@ map
 list
 -
 character.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/character.h
+/home/james/Documents/Command-Capital/Headers/character.h
 economy_controller.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h
+/home/james/Documents/Command-Capital/Headers/economy_controller.h
 
-/home/jeandsmith/Desktop/Command-Capital/Headers/console.h
+/home/james/Documents/Command-Capital/Headers/console.h
 
-/home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h
+/home/james/Documents/Command-Capital/Headers/economy_controller.h
 iostream
 -
 unordered_map
@@ -46,51 +46,53 @@ limits
 bits/unique_ptr.h
 -
 character.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/character.h
+/home/james/Documents/Command-Capital/Headers/character.h
 
-/home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
+/home/james/Documents/Command-Capital/Headers/input_check.h
 string
 -
 
-/home/jeandsmith/Desktop/Command-Capital/Source/character.cpp
+/home/james/Documents/Command-Capital/Source/character.cpp
 ../Headers/character.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/character.h
+/home/james/Documents/Command-Capital/Headers/character.h
 
-/home/jeandsmith/Desktop/Command-Capital/Source/command_repo.cpp
+/home/james/Documents/Command-Capital/Source/command_repo.cpp
 fstream
 -
 ../Headers/command_repo.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/command_repo.h
+/home/james/Documents/Command-Capital/Headers/command_repo.h
 ../Headers/console.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/console.h
+/home/james/Documents/Command-Capital/Headers/console.h
 
-/home/jeandsmith/Desktop/Command-Capital/Source/console.cpp
+/home/james/Documents/Command-Capital/Source/console.cpp
 cstdio
 -
 cstdarg
 -
 ../Headers/console.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/console.h
+/home/james/Documents/Command-Capital/Headers/console.h
 
-/home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp
+/home/james/Documents/Command-Capital/Source/economy_controller.cpp
 ../Headers/economy_controller.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h
+/home/james/Documents/Command-Capital/Headers/economy_controller.h
 ../Headers/input_check.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
+/home/james/Documents/Command-Capital/Headers/input_check.h
 
-/home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp
+/home/james/Documents/Command-Capital/Source/input_check.cpp
 string
 -
 streambuf
 -
 iostream
 -
+cstring
+-
 ../Headers/input_check.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
+/home/james/Documents/Command-Capital/Headers/input_check.h
 ../Headers/console.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/console.h
+/home/james/Documents/Command-Capital/Headers/console.h
 
-/home/jeandsmith/Desktop/Command-Capital/Source/main.cpp
+/home/james/Documents/Command-Capital/Source/main.cpp
 iostream
 -
 random
@@ -100,11 +102,11 @@ fstream
 memory
 -
 ../Headers/input_check.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/input_check.h
+/home/james/Documents/Command-Capital/Headers/input_check.h
 ../Headers/economy_controller.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/economy_controller.h
+/home/james/Documents/Command-Capital/Headers/economy_controller.h
 ../Headers/command_repo.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/command_repo.h
+/home/james/Documents/Command-Capital/Headers/command_repo.h
 ../Headers/console.h
-/home/jeandsmith/Desktop/Command-Capital/Headers/console.h
+/home/james/Documents/Command-Capital/Headers/console.h
 

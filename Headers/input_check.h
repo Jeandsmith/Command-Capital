@@ -9,7 +9,7 @@
 
 class input_check {
 public:
-    static std::string format_string(std::string & input);
+    static char * format_string(char * input);
 };
 
 

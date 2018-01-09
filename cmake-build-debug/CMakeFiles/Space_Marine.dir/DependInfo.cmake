@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jeandsmith/Desktop/Command-Capital/Source/character.cpp" "/home/jeandsmith/Desktop/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/character.cpp.o"
-  "/home/jeandsmith/Desktop/Command-Capital/Source/command_repo.cpp" "/home/jeandsmith/Desktop/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o"
-  "/home/jeandsmith/Desktop/Command-Capital/Source/console.cpp" "/home/jeandsmith/Desktop/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/console.cpp.o"
-  "/home/jeandsmith/Desktop/Command-Capital/Source/economy_controller.cpp" "/home/jeandsmith/Desktop/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o"
-  "/home/jeandsmith/Desktop/Command-Capital/Source/input_check.cpp" "/home/jeandsmith/Desktop/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o"
-  "/home/jeandsmith/Desktop/Command-Capital/Source/main.cpp" "/home/jeandsmith/Desktop/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/main.cpp.o"
+  "/home/james/Documents/Command-Capital/Source/character.cpp" "/home/james/Documents/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/character.cpp.o"
+  "/home/james/Documents/Command-Capital/Source/command_repo.cpp" "/home/james/Documents/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/command_repo.cpp.o"
+  "/home/james/Documents/Command-Capital/Source/console.cpp" "/home/james/Documents/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/console.cpp.o"
+  "/home/james/Documents/Command-Capital/Source/economy_controller.cpp" "/home/james/Documents/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/economy_controller.cpp.o"
+  "/home/james/Documents/Command-Capital/Source/input_check.cpp" "/home/james/Documents/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/input_check.cpp.o"
+  "/home/james/Documents/Command-Capital/Source/main.cpp" "/home/james/Documents/Command-Capital/cmake-build-debug/CMakeFiles/Space_Marine.dir/Source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
